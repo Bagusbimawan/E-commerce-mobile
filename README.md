@@ -1,50 +1,130 @@
-# Welcome to your Expo app 👋
+# E-Commerce React Native App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Table of Contents
+- [Introduction](#introduction)
+- [Project Status](#project-status)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Development](#development)
+- [Screenshots](#screenshots)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
 
-## Get started
+## Introduction
+This is a mobile e-commerce application built using React Native. The app allows users to browse products, add them to their cart, and make purchases. It is designed to provide a seamless shopping experience on mobile devices.
 
-1. Install dependencies
+## Project Status
+**Current Status:** Under Development
 
-   ```bash
-   npm install
-   ```
+This project is currently in the development phase. Some features may not be fully implemented or may contain bugs. Contributions and feedback are welcome!
 
-2. Start the app
+## Features
+- User Authentication (Sign Up, Login, Logout)
+- Browse Products by Categories
+- Product Search
+- Product Details
+- Add to Cart
+- Checkout Process
+- Order History
+- User Profile Management
+- Notifications
 
-   ```bash
-    npx expo start
-   ```
+## Installation
+To get started with the project, follow these steps:
 
-In the output, you'll find options to open the app in a
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/yourusername/ecommerce-react-native.git
+    cd ecommerce-react-native
+    ```
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+2. **Install dependencies:**
+    ```bash
+    bun  install
+    # or
+    yarn install
+    ```
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+3. **Set up environment variables:**
+    Create a `.env` file in the root directory and add your environment variables. For example:
+    ```env
+    API_URL=https://api.yourbackend.com
+    ```
 
-## Get a fresh project
+4. **Run the app:**
+    ```bash
+    bun  start
+    # or
+    yarn start
+    ```
 
-When you're ready, run:
+## Usage
+1. **Start the development server:**
+    ```bash
+    bun start
+    # or
+    yarn start
+    ```
 
-```bash
-npm run reset-project
-```
+2. **Run the app on an Android or iOS emulator:**
+    ```bash
+    bun  run android
+    # or
+    bun run ios
+    ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+3. **Build the app for production:**
+    ```bash
+    bun run build
+    ```
 
-## Learn more
+## Development
+### Current Development Focus
+- Implementing user authentication
+- Setting up Redux for state management
+- Integrating product search functionality
 
-To learn more about developing your project with Expo, look at the following resources:
+### Development Instructions
+1. **Fork the repository.**
+2. **Create a new branch for your feature or bugfix:**
+    ```bash
+    git checkout -b feature/your-feature-name
+    ```
+3. **Make your changes.**
+4. **Commit your changes:**
+    ```bash
+    git commit -m 'Add some feature'
+    ```
+5. **Push to the branch:**
+    ```bash
+    git push origin feature/your-feature-name
+    ```
+6. **Open a pull request.**
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Screenshots
+![Home Screen](screenshots/home.png)
+![Product Details](screenshots/product-details.png)
+![Cart](screenshots/cart.png)
+![Checkout](screenshots/checkout.png)
 
-## Join the community
+## Technologies Used
+- **React Native**: For building the mobile application.
+- **Redux**: For state management.
+- **React Navigation**: For navigation within the app.
+- **Axios**: For making API requests.
+- **Styled Components**: For styling the components.
+- **Expo**: For building and deploying the app.
 
-Join our community of developers creating universal apps.
+## Contributing
+Contributions are welcome! Please follow these steps to contribute:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature-name`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature/your-feature-name`).
+6. Open a pull request.
+
+
+Happy coding!
